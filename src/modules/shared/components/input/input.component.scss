@@ -1,0 +1,26 @@
+.input {
+  position: relative;
+
+  &__value {
+    input {
+      border: 1.5px solid #ABABAB;
+      height: 44px;
+      border-radius: 21px;
+      outline: none;
+      padding: 0 20px;
+      font-size: 18px;
+      width: 290px;
+    }
+  }
+  &__placeholder {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ABABAB;
+  }
+  &__hidden-icon {
+    position: absolute;
+    right: 16px;
+    top: 37px;
+    
+  }
+}
