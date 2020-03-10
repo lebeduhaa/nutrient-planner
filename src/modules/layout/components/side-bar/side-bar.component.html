@@ -1,0 +1,11 @@
+<div class="side-bar">
+  <div class="side-bar__item" [routerLink]="item.link" routerLinkActive="side-bar__item_active"  *ngFor="let item of menuItems">
+    <div class="side-bar__item-icon">
+      <img [src]="'assets/images/' + item.icon">
+    </div>
+    <div class="side-bar__item-title">{{item.title}}</div>
+  </div>
+  <div class="side-bar__item side-bar__item_logout" routerLink="/login">
+    <div class="side-bar__item-title">Выход</div>
+  </div>
+</div>

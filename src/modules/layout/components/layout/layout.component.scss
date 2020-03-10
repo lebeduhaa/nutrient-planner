@@ -1,0 +1,11 @@
+.layout {
+  display: flex;
+
+  &__side-bar {
+    flex-basis: 18.75%;
+  }
+  &__content {
+    flex-basis: 81.25%;
+    padding: 50px;
+  }
+}

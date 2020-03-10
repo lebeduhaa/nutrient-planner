@@ -1,0 +1,12 @@
+@import "../../css/colors.scss";
+@import "../../css/mixins.scss";
+
+.link {
+  font-family: 'SF UI Display Thin';
+  @include text(12px);
+  color: $gray;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}

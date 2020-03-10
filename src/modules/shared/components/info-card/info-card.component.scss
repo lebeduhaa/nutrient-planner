@@ -1,0 +1,25 @@
+@import "../../css/colors.scss";
+@import "../../css/mixins.scss";
+
+.info-card {
+  background-color: $card-color;
+  padding: 22px 30px;
+  border-radius: 34px;
+
+  &__caption {
+    font-family: 'SF UI Display Bold';
+    margin-bottom: 12px;
+    @include text(30px, 0.03em);
+  }
+  /deep/ .info-card__content {
+    font-family: 'SF UI Display Thin';
+    @include text(18px);
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+
+    >div {
+      margin-left: 10px;
+    }
+  }
+}

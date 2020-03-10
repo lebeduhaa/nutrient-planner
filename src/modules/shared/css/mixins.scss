@@ -1,0 +1,4 @@
+@mixin text($font-size, $letter-spacing: 0.04em) {
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}

@@ -1,0 +1,56 @@
+@import "../../../shared/css/colors.scss";
+@import "../../../shared/css/mixins.scss";
+
+.side-bar {
+  background-color: $main;
+  height: 100vh;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: 60px 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    @include text(18px, 0.03em);
+
+    &-title {
+      color: $light-text;
+      margin-left: 17px;
+      position: relative;
+      margin-top: -6px;
+
+      &::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        top: calc(100% + 2px);
+        left: 0;
+        background-color: $light-text;
+        border-radius: 2px;
+        display: none;
+      }
+      &:hover::after {
+        display: block;
+      }
+    }
+    &_active &-title::after {
+      display: block;
+    }
+    &_logout {
+      color: $light-text;
+      padding-right: 50px;
+      justify-content: center;
+      margin-top: auto;
+
+      .side-bar__item-title {
+        margin-left: 0;
+      }
+    }
+  }
+}

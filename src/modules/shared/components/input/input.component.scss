@@ -1,26 +1,28 @@
+@import "../../css/colors.scss";
+@import "../../css/mixins.scss";
+
 .input {
   position: relative;
 
   &__value {
     input {
-      border: 1.5px solid #ABABAB;
+      border: 1.5px solid $gray;
       height: 44px;
       border-radius: 21px;
       outline: none;
       padding: 0 20px;
-      font-size: 18px;
-      width: 290px;
+      width: 100%;
+      @include text(18px, 0.06em);
     }
   }
   &__placeholder {
     margin-bottom: 5px;
-    font-size: 16px;
-    color: #ABABAB;
+    @include text(16px);
+    color: $gray;
   }
   &__hidden-icon {
     position: absolute;
     right: 16px;
     top: 37px;
-    
   }
 }

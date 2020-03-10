@@ -2,3 +2,11 @@
   font-family: 'SF UI Display';
   src: url('./sf-ui-display.woff');
 }
+@font-face {
+  font-family: 'SF UI Display Thin';
+  src: url('./sf-ui-display-thin.woff');
+}
+@font-face {
+  font-family: 'SF UI Display Bold';
+  src: url('./sf-ui-display-bold.woff');
+}

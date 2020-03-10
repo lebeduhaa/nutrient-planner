@@ -26,9 +26,23 @@
   }
   &__form {
     margin-top: 78px;
+    width: 290px;
 
     &-control {
       margin-bottom: 18px;
+      width: 100%;
+    }
+    &-button {
+      margin-top: 28px;
+    }
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
     }
   }
+}
+
+app-dark-green-button {
+  outline: none;
 }

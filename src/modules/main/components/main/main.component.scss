@@ -1,0 +1,9 @@
+.main {
+  &__header {
+    display: flex;
+
+    &-card {
+      margin-right: 30px;
+    }
+  }
+}
