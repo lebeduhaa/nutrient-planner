@@ -1,0 +1,9 @@
+@import "../../../css/colors.scss";
+
+.table::ng-deep app-table-row:nth-child(even) .table-row__item {
+  background-color: $card-color;
+}
+
+.table::ng-deep app-table-head .table-head {
+  margin-bottom: 21px;
+}

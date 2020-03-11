@@ -6,7 +6,12 @@
   @include text(12px);
   color: $gray;
   cursor: pointer;
-}
-.link:hover {
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  &_black {
+    color: black;
+    @include text(16px);
+  }
 }

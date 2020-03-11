@@ -1,0 +1,22 @@
+<div class="story">
+  <div class="story__title">История операций</div>
+  <div class="story__table">
+    <app-table>
+      <app-table-head>
+        <div class="table-head__item table__item_client-id">ID клиента</div>
+        <div class="table-head__item table__item_date">Дата активации</div>
+        <div class="table-head__item table__item_payment">Сумма оплаты по промокоду</div>
+        <div class="table-head__item table__item_reward">Сумма вознаграждения партнеру</div>
+      </app-table-head>
+      <app-table-row *ngFor="let storyItem of story">
+        <div class="table-row__item table__item_client-id">{{storyItem.clientId}}</div>
+        <div class="table-row__item table__item_date">{{storyItem.activationDate}}</div>
+        <div class="table-row__item table__item_payment">{{storyItem.payment}}₽</div>
+        <div class="table-row__item table__item_reward">{{storyItem.reward}}₽</div>
+      </app-table-row>
+    </app-table>
+    <div class="story__pagination">
+      <app-link caption="Показать больше" [black]="true"></app-link>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import "../../../css/mixins.scss";
+
+.table-head {
+  display: flex;
+
+  &::ng-deep .table-head__item {
+    @include text(16px);
+    font-family: 'SF UI Display Bold';
+    text-align: center;
+  }
+}

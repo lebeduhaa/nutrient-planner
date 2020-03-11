@@ -1,0 +1,13 @@
+@import "../../../css/mixins.scss";
+
+.table-row {
+  display: flex;
+
+  &::ng-deep .table-row__item {
+    @include text(16px);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
