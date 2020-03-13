@@ -1,3 +1,10 @@
-<div class="button" [class.button_dark]="dark">
+<div
+  class="button"
+  [ngClass]="{
+    'button_dark': dark,
+    'button_disabled': disabled
+  }"
+  (click)="reactOnClick($event)"
+>
   <div class="button__caption">{{caption}}</div>
 </div>

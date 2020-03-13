@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,7 +7,18 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
 
+  @Output() click = new EventEmitter<void>();
+
   @Input() caption: string;
   @Input() dark: boolean;
+  @Input() disabled: boolean;
+
+  public reactOnClick(event: MouseEvent): void {
+    event.stopPropagation();
+
+    if (!this.disabled) {
+      this.click.emit();
+    }
+  }
 
 }

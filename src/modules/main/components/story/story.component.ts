@@ -17,6 +17,6 @@ export class StoryComponent {
     { clientId: 669, activationDate: '26.02.2020', payment: 11.540, reward: 11.5 },
     { clientId: 1584, activationDate: '26.02.2020', payment: 1250, reward: 12.5 },
     { clientId: 110, activationDate: '26.02.2020', payment: 19590, reward: 195.54 }
-  ]
+  ];
 
 }

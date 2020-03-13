@@ -10,6 +10,22 @@
     display: flex;
     justify-content: center;
   }
+  &__no-orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 170px);
+    top: 50%;
+
+    &-img {
+      margin-bottom: 25px;
+    }
+    &-content {
+      width: 336px;
+      text-align: center;
+    }
+  }
 }
 
 .table__item_ {

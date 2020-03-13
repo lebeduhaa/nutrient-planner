@@ -6,3 +6,20 @@
   box-sizing: border-box;
   font-family: 'SF UI Display';
 }
+
+.mat-dialog-container {
+  border-radius: 34px !important;
+  padding: 45px 30px 30px 30px !important;
+  overflow: visible !important;
+}
+.mat-dialog-content {
+  overflow: visible !important;
+}
+.cdk-overlay-dark-backdrop {
+  background-color: transparent !important;
+}
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

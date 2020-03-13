@@ -1,0 +1,18 @@
+@import "../../css/mixins.scss";
+
+.popup {
+  position: relative;
+
+  &__close {
+    position: absolute;
+    top: -23px;
+    right: -6px;
+    cursor: pointer;
+  }
+  &__caption {
+    font-weight: 600;
+    @include text(20px);
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

@@ -1,3 +1,5 @@
+@import "../../css/colors.scss";
+
 .label {
   display: flex;
   justify-content: space-between;
@@ -9,5 +11,9 @@
 
   &__value {
     margin-right: 13px;
+  }
+  &_disabled {
+    background-color: $light-text;
+    color: $card-color;
   }
 }

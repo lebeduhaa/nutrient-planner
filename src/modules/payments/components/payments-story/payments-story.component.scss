@@ -1,0 +1,25 @@
+@import "../../../shared/css/mixins.scss";
+
+.story {
+  &__title {
+    @include text(30px, 0.03em);
+    margin-bottom: 45px;
+  }
+  &__pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.table__item_ {
+  &date {
+    flex-basis: 25%;
+  }
+  &fake {
+    flex-basis: 50%;
+  }
+  &payment {
+    flex-basis: 25%;
+  }
+}

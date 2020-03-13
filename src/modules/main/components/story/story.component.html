@@ -1,6 +1,6 @@
 <div class="story">
-  <div class="story__title">История операций</div>
-  <div class="story__table">
+  <div class="story__title" *ngIf="story.length">История операций</div>
+  <div class="story__table" *ngIf="story.length">
     <app-table>
       <app-table-head>
         <div class="table-head__item table__item_client-id">ID клиента</div>
@@ -17,6 +17,14 @@
     </app-table>
     <div class="story__pagination">
       <app-link caption="Показать больше" [black]="true"></app-link>
+    </div>
+  </div>
+  <div class="story__no-orders" *ngIf="!story.length">
+    <div class="story__no-orders-img">
+      <img src="assets/images/no-orders.png">
+    </div>
+    <div class="story__no-orders-content">
+      К сожалению, ещё никто не совершил покупку по вашему промокоду
     </div>
   </div>
 </div>

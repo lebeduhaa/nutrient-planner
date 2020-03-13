@@ -1,0 +1,20 @@
+<div class="story">
+  <div class="story__title" *ngIf="story.length">История выплат</div>
+  <div class="story__table" *ngIf="story.length">
+    <app-table>
+      <app-table-head>
+        <div class="table-head__item table__item_date">Дата</div>
+        <div class="table-head__item table__item_fake"></div>
+        <div class="table-head__item table__item_payment">Сумма выплат</div>
+      </app-table-head>
+      <app-table-row *ngFor="let storyItem of story">
+        <div class="table-row__item table__item_date">{{storyItem.date}}</div>
+        <div class="table-row__item table__item_fake"></div>
+        <div class="table-row__item table__item_payment">{{storyItem.payment}}₽</div>
+      </app-table-row>
+    </app-table>
+    <div class="story__pagination">
+      <app-link caption="Показать больше" [black]="true"></app-link>
+    </div>
+  </div>
+</div>

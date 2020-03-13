@@ -12,18 +12,23 @@
   align-items: center;
   border-radius: 20px;
   @include text(18px);
-  cursor: pointer;
   padding: 12px 24px;
 
-  &:hover {
+  &:hover:not(.button_disabled) {
     background-color: $light-main;
+    cursor: pointer;
   }
   &_dark {
     background-color: $dark-green;
     height: 44px;
 
-    &:hover {
+    &:hover:not(.button_disabled) {
       background-color: $light-green;
+      cursor: pointer;
     }
+  }
+  &_disabled {
+    background-color: $light-text;
+    color: $card-color;
   }
 }

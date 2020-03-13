@@ -8,5 +8,12 @@ export const APP = {
     { title: 'Выплаты', icon: 'payments.png', link: '/payments' },
     { title: 'Настройки', icon: 'settings.png', link: '/settings' },
     { title: 'Правила', icon: 'rules.png', link: '/rules' },
-  ]
+  ],
+  dialogs: {
+    out: 'out',
+    outPayments: 'outPayments'
+  },
+  subjects: {
+    blur: 'blur'
+  }
 };
